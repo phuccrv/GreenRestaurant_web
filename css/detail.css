@@ -12,7 +12,7 @@
   .container {
     max-width: 60%;
     padding: 20px;
-    margin-top: 150px;
+    margin: 150px auto;
   }
   .left {
     padding: 0;
