@@ -45,11 +45,11 @@ const headerElement = document.querySelector("header");
 if (userLogin) {
   const contentHeader = `
         <div class="logo">
-          <a href="./index.html"><img src="./img/logoRG.png" /></a>
+          <a href="../index.html"><img src="../img/logoRG.png" /></a>
         </div>
         <div class="menu">
             <ul>
-                <li><a href="./index.html">HOME</a> </li>
+                <li><a href="../index.html">HOME</a> </li>
                 <li><a href="#menu">MENU</a></li>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#contact">CONTACT</a></li>

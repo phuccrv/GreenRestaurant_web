@@ -154,5 +154,5 @@ show.onclick = function () {
 // chức năng xem chi tiết
 
 function handleViewDetail(id){
-  window.location = `./detail.html?idproduct=${id}`
+  window.location = `../pages/detail.html?idproduct=${id}`
 }
