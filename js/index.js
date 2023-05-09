@@ -32,32 +32,35 @@ const headerElement = document.querySelector(".menu");
 
 renderUser(userLogin)
 function renderUser(user){
-  if (user) {
-    const contentHeader = `<ul>
-                  <li><a href="./index.html">HOME</a></li>
-                  <li><a href="#menu">MENU</a></li>
-                  <li><a href="#about">ABOUT</a></li>
-                  <li><a href="#contact">CONTACT</a></li>
-              </ul>
-              <label id="icon" for="">
-                  <i class="fa-solid fa-bars"></i>
-              </label>
-              <div class="control-right">
-                  <div class="user-info">${user.user}</div>
-                  <div onclick="showCarts()" class="cart"><i  class="bx bxs-shopping-bags"></i></div>
-                  <div class="login">
-                      <div class="svg-wrapper-1">
-                          <div class="svg-wrapper">
-                              <i class="bx bx-log-in-circle"></i>
-                          </div>
-                      </div>
-                      <span onclick="logout()">Logout</span>
-                  </div>
-              </div>`;
-      headerElement.innerHTML = contentHeader;
+if (userLogin !=0) {
+    if (user) {
+      const contentHeader = `<ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+                <label id="icon" for="">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="control-right">
+                    <div class="user-info">${user.user}</div>
+                    <div onclick="showCarts()" class="cart"><i  class="bx bxs-shopping-bags"></i></div>
+                    <div class="login">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <i class="bx bx-log-in-circle"></i>
+                            </div>
+                        </div>
+                        <span onclick="logout()">Logout</span>
+                    </div>
+                </div>`;
+        headerElement.innerHTML = contentHeader;
+    }
   }
 }
 
+//<div class="user-info">${user.user}</div>
 
 // tìm kiếm sản phẩm
 function search() {

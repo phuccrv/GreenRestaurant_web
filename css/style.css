@@ -156,7 +156,11 @@ header .menu li ul{
     transition: all 0.3s;
     cursor: pointer;
   }
-  
+  .login a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
   .login:hover {
     transform: translateY(-3px);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
