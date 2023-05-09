@@ -26,7 +26,7 @@ function renderDetail(data) {
                     <h3>${product.titleFood}</h3>
                     <p>Giá sản phẩm: <b>${product.price}$</b></p>
                     <p>Chi tiết:${product.detail}</p>
-                    <button><a href="./index.html"><i class='bx bxs-home'></i>Back Home</a></button>
+                    <button><a href="../index.html"><i class='bx bxs-home'></i>Back Home</a></button>
                    
                 </div>
             </div>`;
