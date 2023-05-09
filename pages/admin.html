@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/admin.css">
+    <!-- link font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Admin</title>
+</head>
+<body>
+    <header>
+        <h1>Green Restaurant</h1>
+        <div class="header-infor">
+            <img src="./img/user.png" alt="">
+            <div class="nameUser">Admin</div>
+            <div class="admin-infor"></div>
+            <a href="./loginAdmin.html"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+        </div>
+    </header>
+    <div class="main">
+        <nav>
+            <div class="navigation">
+                <h3>NAVIGATION</h3>
+                <button id="color-bg" onclick="showProduct()"><i class='bx bxl-product-hunt'></i>Product Management</button>
+                <button id="color-bg" onclick="showUser()"><i class='bx bxs-user-check'></i>User Management</button>
+                <button id="color-bg" onclick="showOrder()"><i class='bx bxs-cart-add'></i>Order Management</button>
+            </div>
+        </nav>
+        <div class="content-admin">
+            <div class="content-product">
+                <h2>Product List</h2>
+                <div class="form">
+                    <button id="Create" onclick="Create()">Create</button>
+                    <div class="search">
+                    <input type="text" id="inputSearch" placeholder="name product or price"/>
+                    <button onclick="search(this)">Tìm kiếm</button>
+                    </div>
+                </div>
+                <div class="content-item-product">
+                    <table>
+                        <form action="">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>IMAGE</th>
+                                    <th>NAME</th>
+                                    <th>PRICE</th> 
+                                    <th>ACTION</th> 
+                                </tr>
+                            </thead>
+                           <tbody>
+                            <tr>
+                                <td>id</td>
+                                <td><img src="./img/anh1.jpg" alt=""></td>
+                                <td>name product</td>
+                                <td>price</td>
+                                <td>
+                                    <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                    <button><i class="fa-solid fa-xmark"></i></button>
+                                </td>
+                            </tr>
+                           </tbody>
+                        </form>
+                    </table>
+                    <div class="form-edit">
+                        <form action="">
+                            <input type="text" id="idInput" disabled placeholder="ID">
+                            <br>
+                            <input type="file" name="" id="imageInput">
+                            <br>
+                            <label for="">Product Name</label>
+                            <br>
+                            <input type="text" id="nameInput" placeholder="name product">
+                            <br>
+                            <label for="">Price</label>
+                            <br>
+                            <input type="text" id="priceInput" placeholder="price">
+                            <input type="submit" name="" id="EditProduct">
+                        </form>
+                    </div>
+                    <div class="form-add">
+                        <form action="">
+                            <label for="">ID</label>
+                            <br>
+                            <input type="text" name="" id="id-product" placeholder="enter id">
+                            <br>
+                            <input type="file" id="image">
+                            <br>
+                            <label for="">NAME PRODUCT</label>
+                            <br>
+                            <input type="text" id="product-name" placeholder="enter name product">
+                            <br>
+                            <label for="">PRICE</label>
+                            <br>
+                            <input type="number" name="" id="price" placeholder="enter price">
+                            <br>
+                            <div class="control-btn">
+                                <input onclick="handleAdd()" type="submit" value="save">
+                                <input onclick="cancelBtn()" type="button" value="cancel">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="content-user">
+                <div class="content-item-user">
+                    <h2>User List</h2>
+                    <div class="form">
+                        <!-- <button id="Create" onclick="Create()">Create</button> -->
+                        <div class="search">
+                            <input type="text" id="inputSearchUser" placeholder="enter name"/>
+                            <button onclick="searchtAccount(this)">Tìm kiếm</button>
+                        </div>
+                    </div>
+                    <table>
+                        <form action="">
+                            <thead class="title-user">
+                                <tr>
+                                    <th>Account</th>
+                                    <th>Mail</th>
+                                    <th>Active</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- <tr>
+                                    <td>nguyenvana</td>
+                                    <td>nguyenvana@gmail.com</td>
+                                    <td>hoạt động</td>
+                                    <td>
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button><i class="fa-solid fa-xmark"></i></button>
+                                    </td>
+                                </tr> -->
+                            </tbody>
+                        </form>
+                    </table>
+                </div>
+            </div>
+            <div class="content-order">
+                <h2>Order List</h2>
+                <table>
+                    <form action="">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>payments</th>
+                                <th>Total price</th>
+                                <th>Action</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>nguyễn văn a</td>
+                                    <td>thanh toán online</td>
+                                    <td>800.000$</td>
+                                    <td>
+                                        <button><i class="fa-solid fa-pen-to-square"></i></button>
+                                        <button><i class="fa-solid fa-trash-can"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </form>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

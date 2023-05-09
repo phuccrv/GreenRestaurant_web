@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+    top: 20px;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+  }
+  
+  .login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #bdb8b8;
+    font-size: 12px;
+  }
+  
+  .login-box form .inputSignUp {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border-radius: 10px;
+    background-color: #fefefe;
+    cursor: pointer;
+  }
+  
+  .login-box input span {
+    position: absolute;
+    display: block;
+  }
+  
+form a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+
+form h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+
+.bg img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    margin-left: 100px;
+  }
+  
+  .information{
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  
+  .information span{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .information p{
+    margin: 40px 0px;
+    font-family:Arial, Helvetica, sans-serif ;
+  }
+  
+  .connect{
+    margin-left: 100px;
+    font-family:Arial, Helvetica, sans-serif ;
+    text-transform: uppercase;
+  }
+
+  .connect{
+    margin-top: 30px;
+  }
+
+  .card span{
+    font-size: 26px;
+    font-weight: bold;
+  }
+    .card input{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .card textarea{
+    width: 300px;
+    height: 100px;
+  }
+
+  .card button{
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+
+  @media (max-width: 960px) {
+    .logo img{
+      width: 200px;
+      height: 200px;
+    }
+    .footer {
+      margin-left: 35px;
+    }
+    .information {
+      margin-left: 40px;
+      margin-top: 30px;
+    }
+    .information p {
+      margin: 30px 0px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .card{
+      margin-right: 70px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .logo img{
+      display: none;
+    }
+    .information p {
+      margin: 25px 0px;
+    }
+    .card textarea {
+      height: 65px;
+  }
+
+  }
+  @media (max-width: 648px){
+    .information {
+      margin-left: -10px;
+      margin-top: 30px;
+    }
+    .connect {
+      margin-left: 75px;
+    }
+  }
+  @media (max-width: 400px){
+    .login-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300px;
+      padding: 10px;
+      transform: translate(-50%, -50%);
+      background: rgb(255, 255, 255);
+      box-sizing: border-box;
+      box-shadow: 0 15px 25px rgba(0,0,0,.6);
+      border-radius: 10px;
+  }
+  .login-box form .inputSignUp {
+    font-size: 13px;
+    margin-top: 0;
+  }
+  .connect{
+    display: none;
+  }
+  .information{
+    width: 350px;
+  }
+  }
+  

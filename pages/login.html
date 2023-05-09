@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logoRG.png" type="image/x-icon">
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login Now</title>
+</head>
+<body>
+    <div class="bgout">
+      <img src="../img/bgout.jpg" alt="">
+    </div>
+    <div class="login-box">
+      
+      <form>
+          <center><h1>login your account</h1></center>
+        <div class="user-box">
+          <input type="text" name="" required="" id="emailInput">
+          <label>Your Mail</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="" required="" id="passwordInput">
+          <label>Password</label>
+        </div>
+        <p class="error" id="error"></p>
+        <center><input class="inputLogin" type="submit" value="login" /></center>
+        <p><a href="./createAccount.html" >Register an account...</a>😁</p>
+      </form>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+      <div class="logo">
+        <img src="../img/logoRG.png" alt="">
+      </div>
+      <div class="information">
+        <span>Information</span>
+        <p><b>Address:</b> GARTH ROAD STE #170 BAYTOWN TX 77521</p>
+        <p><b>Phone:</b> 713.377.9900</p>
+        <p><b>Website:</b> www.GreenRestaurant.com</p>
+        <p><b>Mail:</b> GreenRestaurant@gmail.com</p>
+      </div>
+      <div class="connect">
+        <div class="card">
+          <span class="title">Connect with us</span>
+          <form class="form">
+            <div class="group">
+            <input placeholder="‎" type="text" required="">
+            <label for="name">Name</label>
+            </div>
+        <div class="group">
+            <input placeholder="‎" type="email" id="email" name="email" required="">
+            <label for="email">Email</label>
+            </div>
+        <div class="group">
+            <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
+            <label for="comment">Comment</label>
+        </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>
